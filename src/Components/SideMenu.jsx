@@ -13,10 +13,10 @@ const SideMenu = () => {
   const initial = `M100 0 L100 ${height} Q-100 ${height / 2} 100 0`;
   const final = `M100 0 L100 ${height} Q100 ${height / 2} 100 0`;
   useGSAP(() => {
-    if (firstRun > 0) {
-      setFirstRun((prev) => (prev = prev - 1));
-      return;
-    }
+    // if (firstRun > 0) {
+    //   setFirstRun((prev) => (prev = prev - 1));
+    //   return;
+    // }
     const tl = gsap.timeline({
       defaults: { ease: "power2.inOut", duration: 0.5 },
     });
